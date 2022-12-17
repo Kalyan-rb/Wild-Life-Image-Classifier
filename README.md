@@ -52,6 +52,9 @@ due to the computational power constraint -- This issue can be solved.
 Styling with HTML and CSS can also be Improved, Moving
 forward I will be Working hard and create some more amazing things.
 
+## Demo
+
+![](https://github.com/Kalyan-rb/Wild-Life-Image-Classifier/blob/main/project_demo.gif)
 
 
 
