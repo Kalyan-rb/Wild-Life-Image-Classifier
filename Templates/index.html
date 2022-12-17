@@ -1,0 +1,136 @@
+
+
+
+<html>
+<head>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/new_file.css') }}">
+</head>
+
+<style>
+body {
+  background-image: url({{ url_for('static', filename='image/bg2.jpg') }})
+}
+h1 {
+  color: black;
+  text-align: center;
+   font-size: 60px;
+ 
+}
+h2 {
+  color: white;
+   font-size: 20px;
+ 
+}
+table, th, td {
+  border:1px solid black;
+  border-collapse: collapse;
+  table-align: right;
+  height: 20px;
+}
+th, td {
+  background-color: bg;
+}
+img {
+ width: 400px;
+  height: 300px;
+  object-fit: fill;
+}
+
+</style>
+<body>
+<h1 style="color:white;">Wild Life Image Classifier</h1>
+<h2> This algorithim was trained only on the following animals, Please upload one of the below listed animals
+in JPG/JPEG format to get the correct prediction </h2>
+
+<table style = "position:absolute; right:20px; bottom:160px;" allign="right">
+  <tr>
+    <td><b>Bald Eagle</b></td>
+    <td><b>Cougar</b></td>
+    </tr>
+    <tr>
+    <td><b>Elk</b></td>
+    <td><b>Gray Wolf</b></td>
+    </tr>
+    
+    <tr>
+    <td><b>Bobcat</b></td>
+    <td><b>Coyote</b></td>
+    </tr>
+    <tr>
+    <td><b>Columbian black-tailed deer</b></td>
+    <td><b>Seals</b></td>
+    </tr>
+    <tr>
+     <td><b>Nutria</b></td>
+     <td><b>Canada lynx</b></td>
+     </tr>
+     <tr>
+     <td><b>Gray fox</b></td>
+     <td><b>Sea lions</b></td>
+     </tr>
+     <tr>
+     <td><b>Seals</b></td>
+     <td><b>Raccoon</b></td>
+     </tr>
+     <tr>
+      <td><b>Raven</b></td>
+      <td><b>Mountain beaver</b></td>
+      </tr>
+      <tr>
+            <td><b>Red Fox</b></td>
+          <td><b>Ring Tail</b></td>
+          </tr>
+          <tr>
+      <td><b>Virginia Oppossum</b></td>
+      <td><b>Black Bear</b></td>
+      </tr>
+    
+</table>
+
+
+		<div class="title">
+			
+		</div>
+
+        <div class="app">
+		<div class="form-section">
+		
+		 <div class="preview">
+           <img id="file-ip-1-preview"  class="upload-icon" />
+         </div>
+         
+		
+		
+		<form action="/upload" method="post" enctype="multipart/form-data">
+		<input type="file" name="file"  accept="image/*" onchange="showPreview(event);">
+        <input type='submit' value='Upload' >
+      
+		</form>
+
+		</div>
+		
+		<h4>{{result}}</h4>
+		
+
+</div>
+	
+
+	</div>
+</div>
+
+<script>
+  function showPreview(event){
+  if(event.target.files.length > 0){
+    var src = URL.createObjectURL(event.target.files[0]);
+    var preview = document.getElementById("file-ip-1-preview");
+   var preview = document.getElementById("file-ip-1-preview");
+    preview.src = src;
+    preview.style.display = "block";
+  }
+}
+
+</script>
+
+</body>
+</html>
+
