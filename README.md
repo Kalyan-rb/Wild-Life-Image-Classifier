@@ -20,9 +20,11 @@ After experimenting with several models, I found that the state-of-the-art ResNe
 ### Areas for Improvement
 While this model serves its purpose, there is room for further enhancement:
 
-Increased Animal Diversity: The model currently incorporates only 20 animal species. Expanding the dataset to include a more comprehensive range of wildlife would significantly improve its capabilities.
+#### Increased Animal Diversity: 
+The model currently incorporates only 20 animal species. Expanding the dataset to include a more comprehensive range of wildlife would significantly improve its capabilities.
 
-Improving Accuracy: Although utilizing ResNet50, the validation accuracy achieved is approximately 80%. Enhancing accuracy can be achieved by augmenting the training dataset and allocating additional computational resources to the model.
+#### Improving Accuracy: 
+Although utilizing ResNet50, the validation accuracy achieved is approximately 80%. Enhancing accuracy can be achieved by augmenting the training dataset and allocating additional computational resources to the model.
 
 Enhanced Styling: The HTML and CSS elements can be further refined to create a more polished and professional user interface.
 
