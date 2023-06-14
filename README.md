@@ -1,56 +1,32 @@
 
-# Wild Life Image Classification using Deep Learning
+ ## Wildlife Image Classification using Deep Learning
+This Readme file provides a detailed account of my journey in developing this project.
 
-This Readme file gives the detailed journey of mine in making this 
-project.
-## Motivation
+### Motivation
+My deep-rooted fascination for wildlife, fostered by countless hours spent watching National Geographic during my formative years, inspired me to embark on this project.
 
-I used to spend the most of my time watching National Geographic when I was younger, which helped to cultivate a passion for wildlife.
+### Project Overview
+The primary goal of this project was to address the challenge I faced in identifying various animals encountered during my treks. To overcome this, I leveraged the power of deep learning to create a model capable of recognizing and classifying wildlife species based on uploaded photographs.
 
+### Problem Statement
+This project aims to facilitate animal identification during excursions without the need for human intervention, particularly for individuals like me who often encounter unfamiliar wildlife species.
 
+### Key Learnings
+This project provided me with valuable insights into the realm of deep learning. Throughout the process, I encountered and overcame challenges related to unwanted images, preprocessing techniques, and model building stages. Additionally, I expanded my skill set by gaining proficiency in CSS and HTML, which allowed me to enhance the project's visual appeal.
 
-Why this project?
+### Algorithm Used
+After experimenting with several models, I found that the state-of-the-art ResNet50 model offered optimal performance for my use case. I utilized the pre-trained weights of the ResNet50 model, incorporating my own fully connected layer to address the specific requirements of this project.
 
-I encountered many animals in the woods while out trekking that I was unable to identify. So I took pictures of them (or at least some of them) and asked my pals to identify the animals' names, but they were unable to.
+### Areas for Improvement
+While this model serves its purpose, there is room for further enhancement:
 
-Years went by until I discovered deep learning, which could address my issue with animal recognition.
+Increased Animal Diversity: The model currently incorporates only 20 animal species. Expanding the dataset to include a more comprehensive range of wildlife would significantly improve its capabilities.
 
-I therefore considered creating a deep learning model. Such that my model should have the ability to provide me with the name when I upload a photograph.
+Improving Accuracy: Although utilizing ResNet50, the validation accuracy achieved is approximately 80%. Enhancing accuracy can be achieved by augmenting the training dataset and allocating additional computational resources to the model.
 
-## What problem does it solve?
+Enhanced Styling: The HTML and CSS elements can be further refined to create a more polished and professional user interface.
 
-At least for folks like myself, this approach will make it easier to identify animals
- when they are on an excursion without human assistance.
-## What did I learn?
-
-This project improved my comprehension of deep learning.
-
-I had numerous issues at every stage, including Unwanted Images, the Pre-processing Stage, and the Model Building Stage,  which made my learning process more challenging.
-In the process, I also learned the fundamentals of CSS and HTML, which was very exciting
-## Algorithm Used
-
-While training the model, I tried with many models and finally
-state of the art model ResNet50 came to my rescue.
-
-I used the weights of the ResNet50 model till the convolutional part 
-and then added my own fully connected layer to solve my use case.
-
-
-## Things Which can be Imporved
-
-This Model is not perfect
-
- I Included only 20 animals
-while building this model which is very far from number of
-animals we find in the wild. Well this can be Imporved
-
-I got an validation accuracy of around 80% which is very less
-even though I am using ResNet50 , I could have Imporved
-the accuracy by giving more images to my model which I was not able to
-due to the computational power constraint -- This issue can be solved.
-
-Styling with HTML and CSS can also be Improved, Moving
-forward I will be Working hard and create some more amazing things.
+Moving forward, I am committed to honing my skills and developing more innovative solutions.
 
 ## Demo
 
